@@ -1,0 +1,23 @@
+﻿html {
+    font-size: 10px;
+    margin-bottom: 30px;
+
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+        
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;    
+    
+}
+
+body {
+    margin-bottom: 30px;
+    background: repeating-linear-gradient(#F08080, #BA85FF);
+}

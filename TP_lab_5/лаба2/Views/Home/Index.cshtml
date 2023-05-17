@@ -1,0 +1,60 @@
+﻿@model лаба2.Models.dataset
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="parent">
+    <div class="child">
+        <h1 style="margin-top: 1em">Оформить посылку</h1><hr />
+        
+        <form method="post">
+            <p>
+                <label>Дата заказа:</label><br />
+                <input type="date" name="data"/>
+            </p><hr />
+
+            <p>
+                <label>Откуда</label><br />
+                <textarea name="adress_sender"></textarea>
+            </p>
+
+            <p>
+                <label>Куда</label><br />
+                <textarea name="adress_recipient"></textarea>
+            </p><hr />
+
+            <p>
+                <label>Вес посылки (кг)</label><br />
+                <input type="text" name="weight" />
+
+            </p>
+
+            <p>
+                <label>Ценность посылки (руб.)</label><br />
+                <input type="text" name="price" />
+
+            </p><hr />
+
+
+            <p>
+                <label>Способ доставки</label><br />
+                <input name="delivery_method" type="radio" value="regular" />
+                <span>обычный</span> <br />
+                <input name="delivery_method" type="radio" value="expedited" />
+                <span>ускоренный</span> <br />
+                <input name="delivery_method" type="radio" value="by_courier" />
+                <span>курьером</span> <br />
+
+            </p>
+
+
+            <p style="margin-top: 1em; padding-left: 12em">
+                <input type="submit" value="Оформить" class="rounded-pill" />
+            </p>
+
+        </form>
+
+    </div>
+</div>
+
+
+
